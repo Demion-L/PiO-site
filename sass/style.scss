@@ -1,0 +1,31 @@
+$white: #ffffff;
+$green: #23d87d;
+$darkBlue: #462be2;
+$text: #000000;
+$grey: #e5e5e5;
+
+body,
+html {
+    max-width: 1920px;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: $text;
+}
+
+@import "header", "main", "description", "for";
+
+//media queries
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}

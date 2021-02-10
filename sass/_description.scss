@@ -1,0 +1,92 @@
+.description {
+    background: $green url(../source/img/bg_2.png) no-repeat;
+
+    &__content {
+        margin: 0 auto;
+        padding: 222px 465px;
+        color: $white;
+        font-family: Manrope;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+//media queries
+
+@media (max-width: 1500px) {
+    .description {
+        &__content {
+            padding: 162px 265px;
+        }
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .description {
+        &__content {
+            padding: 132px 235px;
+
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .description {
+        &__content {
+            padding: 162px 265px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .description {
+        &__content {
+            padding: 132px 205px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .description {
+        &__content {
+            padding: 132px 205px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .description {
+        &__content {
+            padding: 92px 145px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        &__content {
+            padding: 62px 95px;
+            font-size: 10px;
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .description {
+        &__content {}
+    }
+}
