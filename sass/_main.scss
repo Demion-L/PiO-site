@@ -50,6 +50,7 @@
         border-radius: 8px;
         background-color: $darkBlue;
         position: relative;
+        cursor: pointer;
 
         &:before {
             content: '';

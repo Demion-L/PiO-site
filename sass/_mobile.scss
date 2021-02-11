@@ -1,0 +1,137 @@
+.mobile {
+    background-color: $creem;
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 382px 59px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 520px;
+    }
+
+    &__container-title {
+        margin: 128px 0 47px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__container-descr {
+        font-size: 16px;
+        margin: 0 0 121px;
+        line-height: 2;
+    }
+
+    &__pic {
+        width: 100%;
+        max-width: 486px;
+    }
+}
+
+//media queries
+
+@media (max-width: 1500px) {
+    .mobile {
+        padding: 44px 182px 59px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mobile {
+        padding: 44px 122px 59px;
+
+        &__container {
+            max-width: 370px;
+        }
+
+        &__container-title {
+            margin: 88px 0 37px;
+            font-size: 22px;
+        }
+
+        &__container-descr {
+            font-size: 14px;
+            margin: 0 0 91px;
+        }
+
+        &__pic {
+            max-width: 416px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .mobile {
+        padding: 24px 72px 39px;
+
+        &__container {
+            max-width: 300px;
+        }
+
+        &__container-title {
+            margin: 68px 0 27px;
+            font-size: 18px;
+        }
+
+        &__container-descr {
+            font-size: 12px;
+            margin: 0 0 91px;
+            line-height: 1.5;
+        }
+
+        &__pic {
+            max-width: 216px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile {
+        padding: 24px 32px 29px;
+
+        &__container {
+            max-width: 250px;
+        }
+
+        &__container-title {
+            margin: 48px 0 21px;
+            font-size: 16px;
+        }
+
+        &__container-descr {
+            font-size: 10px;
+            margin: 0 0 61px;
+            line-height: 1.3;
+        }
+
+        &__pic {
+            max-width: 116px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile {
+        padding: 14px 22px 19px;
+
+        &__container {
+            max-width: 130px;
+        }
+
+        &__container-title {
+            margin: 28px 0 11px;
+            font-size: 14px;
+        }
+
+        &__container-descr {
+            font-size: 8px;
+            margin: 0 0 41px;
+        }
+
+        &__pic {
+            max-width: 76px;
+        }
+    }
+}

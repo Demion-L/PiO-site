@@ -1,0 +1,237 @@
+.form {
+    position: relative;
+
+    &__title {
+        width: 100%;
+        max-width: 367px;
+        margin: 136px auto 69px;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    &__content {
+        margin-bottom: 1240px;
+    }
+
+    &__form {
+        background-color: $green;
+        width: 100%;
+        max-width: 560px;
+        padding: 40px;
+        border-radius: 16px;
+        border: solid 1px #f7f7f7;
+        background-color: #23d87d;
+        position: absolute;
+        top: 120px;
+        left: calc(50% - 280px);
+    }
+
+    &__form-name,
+    &__form-email,
+    &__form-textArea,
+    &__form-button {
+        width: 100%;
+        max-width: 480px;
+        color: $white;
+        margin: 0 0 30px;
+        border: solid 1px #ffffff;
+        border-radius: 8px;
+        font-size: 24px;
+    }
+
+    &__form-name,
+    &__form-email {
+        padding: 20px 30px;
+    }
+
+    &__form-textArea {
+        padding: 20px 30px 196px 30px;
+    }
+
+    &__form-button {
+        background-color: $darkBlue;
+        padding: 20px 30px;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: all 0.5s ease;
+        }
+
+        &:hover:before {
+            width: 100%;
+        }
+    }
+
+    &__background {
+        width: 100%;
+        max-width: 1160px;
+        position: absolute;
+        z-index: -2;
+        top: 280px;
+        left: calc(50% - 580px);
+    }
+}
+
+
+//media queries
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .form {
+        &__title {
+            max-width: 227px;
+            margin: 66px auto 59px;
+            font-size: 28px;
+        }
+
+        &__content {
+            margin-bottom: 1030px;
+        }
+
+        &__form {
+            max-width: 460px;
+            padding: 40px;
+            top: 90px;
+            left: calc(50% - 230px);
+        }
+
+        &__form-name,
+        &__form-email,
+        &__form-textArea,
+        &__form-button {
+            max-width: 380px;
+            margin: 0 0 30px;
+            font-size: 18px;
+        }
+
+        &__form-name,
+        &__form-email {
+            padding: 16px 26px;
+        }
+
+        &__form-textArea {
+            padding: 16px 17px 166px 30px;
+        }
+
+        &__form-button {
+            background-color: $darkBlue;
+            padding: 16px 30px;
+        }
+
+        &__background {
+            max-width: 960px;
+            top: 280px;
+            left: calc(50% - 420px);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        &__title {
+            max-width: 197px;
+            margin: 56px auto 49px;
+            font-size: 24px;
+        }
+
+        &__content {}
+
+        &__form {
+            max-width: 400px;
+            padding: 40px;
+            top: 90px;
+            left: calc(50% - 200px);
+        }
+
+        &__form-name,
+        &__form-email,
+        &__form-textArea,
+        &__form-button {
+            max-width: 310px;
+            margin: 0 0 30px;
+            font-size: 14px;
+        }
+
+        &__form-name,
+        &__form-email {
+            padding: 14px 22px;
+        }
+
+        &__form-textArea {
+            padding: 14px 13px 126px 20px;
+        }
+
+        &__form-button {
+
+            padding: 16px 30px;
+        }
+
+        &__background {
+            width: 100%;
+            max-width: 960px;
+            position: absolute;
+            z-index: -2;
+            top: 280px;
+            left: calc(50% - 420px);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        &__title {
+            max-width: 137px;
+            margin: 56px auto 39px;
+            font-size: 16px;
+        }
+
+        &__content {
+            margin-bottom: 540px;
+        }
+
+        &__form {
+            max-width: 200px;
+            padding: 16px;
+            top: 60px;
+            left: calc(50% - 100px);
+        }
+
+        &__form-name,
+        &__form-email,
+        &__form-textArea,
+        &__form-button {
+            max-width: 160px;
+            margin: 0 0 16px;
+            font-size: 10px;
+        }
+
+        &__form-name,
+        &__form-email {
+            padding: 8px 12px;
+        }
+
+        &__form-textArea {
+            padding: 8px 13px 86px;
+        }
+
+        &__form-button {
+
+            padding: 10px 18px;
+        }
+
+        &__background {
+            max-width: 260px;
+            z-index: -2;
+            top: 260px;
+            left: calc(50% - 130px);
+        }
+    }
+}
